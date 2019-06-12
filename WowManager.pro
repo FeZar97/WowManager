@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += winextras
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -33,6 +34,8 @@ HEADERS += \
 
 FORMS += \
         widget.ui
+
+LIBS += -luser32
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
